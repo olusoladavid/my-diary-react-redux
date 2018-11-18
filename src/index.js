@@ -1,13 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-
 const App = () => (
-  <div className="page">
-    <p>Hello World</p>
+  <div>
+    <h1>Welcome to My Diary</h1>
   </div>
 );
-
-App.proptypes = {};
 
 ReactDOM.render(<App />, document.getElementById("app"));
