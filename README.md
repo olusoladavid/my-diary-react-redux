@@ -43,11 +43,12 @@ git clone https://github.com/olusoladavid/my-diary-react-redux
 ```
 
 - Install dependencies with `npm install`
-- Run `npm start`
+- Run `npm start` to start dev server
+- Run `npm run build` to build app
 
 ## Live Demo
 
-- [https://github.com/olusoladavid/my-diary-react-redux](https://olusoladavid.github.io/my-diary-react-redux)
+- [https://mydiary.netlify.com](https://mydiary.netlify.com)
 
 ## API Docs
 
