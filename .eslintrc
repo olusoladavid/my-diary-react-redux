@@ -6,7 +6,7 @@
   "plugins": ["react"],
   "rules": {
     "max-len": [1, 120, 2, { "ignoreComments": true }],
-    "prop-types": [1]
+    "react/prop-types": [1]
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"]
 }
