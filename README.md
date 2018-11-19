@@ -1,5 +1,8 @@
 # my-diary-react-redux
 
+[![Build Status](https://travis-ci.org/olusoladavid/my-diary-react-redux.svg?branch=staging)](https://travis-ci.org/olusoladavid/my-diary-react-redux)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1f3cec3aa9ebe9d246b1/test_coverage)](https://codeclimate.com/github/olusoladavid/my-diary-react-redux/test_coverage)
+
 A React-Redux based client (frontend) that consumes MyDiary API and interfaces users with the service. The API can be found at [https://my-diary-backend.herokuapp.com/api/docs](https://my-diary-backend.herokuapp.com/api/docs)
 
 ## Features
