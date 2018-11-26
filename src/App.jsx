@@ -1,9 +1,12 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+
+import HomeView from "./components/home/HomeView.jsx";
 
 const App = () => (
-  <div>
-    <h1>Welcome to My Diary</h1>
-  </div>
+  <Switch>
+    <Route path="/" component={HomeView} />
+  </Switch>
 );
 
 export default App;
