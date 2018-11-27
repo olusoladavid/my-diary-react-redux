@@ -1,12 +1,8 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 
-import HomeView from "./components/home/HomeView.jsx";
+import HomeView from "./views/home/HomeView.jsx";
 
-const App = () => (
-  <Switch>
-    <Route path="/" component={HomeView} />
-  </Switch>
-);
+const App = () => <Route path="/" component={HomeView} />;
 
 export default App;
