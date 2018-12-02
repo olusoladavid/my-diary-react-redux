@@ -22,7 +22,7 @@ module.exports = env => {
             use: ["babel-loader", "eslint-loader"]
           },
           {
-            test: /\.scss$/,
+            test: /\.(scss|css)$/,
             use: [PLATFORM === "production" ? MiniCssExtractPlugin.loader : "style-loader", "css-loader", "sass-loader"]
           },
           {
@@ -34,7 +34,7 @@ module.exports = env => {
             ]
           },
           {
-            test: /\.(png|jpg|gif|svg)$/,
+            test: /\.(woff(2)?|ttf|eot|png|jpg|gif|svg)$/,
             use: [
               {
                 loader: "file-loader",

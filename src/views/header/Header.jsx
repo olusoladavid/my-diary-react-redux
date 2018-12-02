@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import SideBar from "../../containers/sidebar/SideBar.jsx";
+import SideBar from "../sidebar/SideBar.jsx";
 
 const Header = () => {
   return (

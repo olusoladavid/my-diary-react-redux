@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render without crashing when user is authenticated 1`] = `
+<nav
+  className="nav"
+>
+  <span
+    className="nav__open-menu js-open-menu"
+    onClick={[Function]}
+  />
+  <ul
+    className="list nav__list js-nav-list"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <li
+      className="list__item"
+    >
+      <span
+        className="nav__close-menu js-close-menu"
+        onClick={[Function]}
+      />
+    </li>
+    <li
+      className="list__item"
+    >
+      <span
+        className="link nav__link"
+        onClick={[MockFunction]}
+      >
+        Logout
+      </span>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`should render without crashing when user is not authenticated 1`] = `
+<nav
+  className="nav"
+>
+  <span
+    className="nav__open-menu js-open-menu"
+    onClick={[Function]}
+  />
+  <ul
+    className="list nav__list js-nav-list"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <li
+      className="list__item"
+    >
+      <span
+        className="nav__close-menu js-close-menu"
+        onClick={[Function]}
+      />
+    </li>
+    <li
+      className="list__item"
+      key="0"
+    >
+      <Link
+        className="link nav__link"
+        replace={false}
+        to="/signup"
+      >
+        Signup
+      </Link>
+    </li>
+  </ul>
+</nav>
+`;

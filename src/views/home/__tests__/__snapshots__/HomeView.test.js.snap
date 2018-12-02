@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Fragment>
+  <section
+    className="hero hero--home"
+  >
+    <div
+      className="container"
+    >
+      <h1
+        className="hero__title"
+      >
+        Capture every moment.
+      </h1>
+      <p
+        className="hero__text"
+      >
+        Stories from your life all in one place
+      </p>
+      <div>
+        <Link
+          className="button button--success"
+          replace={false}
+          to="/signup"
+        >
+          Get Started
+        </Link>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1
+      className="feature-list__title"
+    >
+      Features
+    </h1>
+    <div
+      className="container"
+    >
+      <div
+        className="feature-list"
+      >
+        <div
+          className="feature-list__item"
+        >
+          <img
+            alt="remind-icon"
+            className="item__image"
+            src="test-file-stub"
+          />
+          <h2
+            className="item__title"
+          >
+             Reminders 
+          </h2>
+          <p
+            className="item__desc"
+          >
+            Choose a time and we will send you daily reminders to write in your diary.
+          </p>
+        </div>
+        <div
+          className="feature-list__item"
+        >
+          <img
+            alt="hashtag-icon"
+            className="item__image"
+            src="test-file-stub"
+          />
+          <h2
+            className="item__title"
+          >
+             Privacy 
+          </h2>
+          <p
+            className="item__desc"
+          >
+            Your stories are yours and yours alone. We will never share your data.
+          </p>
+        </div>
+        <div
+          className="feature-list__item"
+        >
+          <img
+            alt="fav-icon"
+            className="item__image"
+            src="test-file-stub"
+          />
+          <h2
+            className="item__title"
+          >
+             Favorites 
+          </h2>
+          <p
+            className="item__desc"
+          >
+            Easily find your favorite memories and be happy again
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Fragment>
+`;
