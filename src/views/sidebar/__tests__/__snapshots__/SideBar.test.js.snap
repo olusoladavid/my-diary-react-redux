@@ -26,6 +26,30 @@ exports[`should render without crashing when user is authenticated 1`] = `
     </li>
     <li
       className="list__item"
+      key="0"
+    >
+      <Link
+        className="link nav__link"
+        replace={false}
+        to="/stories"
+      >
+        Stories
+      </Link>
+    </li>
+    <li
+      className="list__item"
+      key="1"
+    >
+      <Link
+        className="link nav__link"
+        replace={false}
+        to="/new-story"
+      >
+        New Story
+      </Link>
+    </li>
+    <li
+      className="list__item"
     >
       <span
         className="link nav__link"

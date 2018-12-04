@@ -46,9 +46,9 @@ export const loggingUser = payload => ({
 export const loginUser = user => async dispatch => {
   try {
     dispatch(loggingUser(true));
-    const { data: newUser } = await API.loginUser(user);
-    localStorage.setItem("accessToken", newUser.token);
-    dispatch(loggedUser(newUser));
+    const { data: authUser } = await API.loginUser(user);
+    localStorage.setItem("accessToken", authUser.token);
+    dispatch(loggedUser(user));
   } catch (err) {
     dispatch(errorHandler(err));
     dispatch(loggingUser(false));

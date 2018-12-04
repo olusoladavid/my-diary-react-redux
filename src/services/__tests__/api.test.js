@@ -10,5 +10,5 @@ it("should use interceptor when making a request", () => {
 });
 
 it("should set token when passed request config", () => {
-  expect(API.setToken({})).toEqual({});
+  expect(API.setToken({ headers: { Authorization: null } })).toEqual({ headers: { Authorization: "Bearer null" } });
 });

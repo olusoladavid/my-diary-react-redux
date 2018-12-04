@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders story content without crashing 1`] = `
+<figure
+  className="story-list__item"
+>
+  <div
+    className="item__holder"
+  />
+  <div
+    className="item__date"
+  >
+    <span
+      className="date__span date__day"
+    >
+      08
+    </span>
+    <span
+      className="date__span date__month"
+    >
+      NOV
+    </span>
+    <span
+      className="date__span date__year"
+    >
+      2018
+    </span>
+  </div>
+  <figcaption
+    className="item__caption"
+  >
+    <h3
+      className="caption__text caption__title"
+    >
+      title
+    </h3>
+    <p
+      className="caption__text caption__content"
+    >
+      content
+    </p>
+  </figcaption>
+  <div
+    className="item__overlay"
+  >
+    Read Story
+  </div>
+  <Link
+    className="link item__link"
+    replace={false}
+    to="story.html?id=1"
+  />
+</figure>
+`;
+
+exports[`renders story content without crashing 2`] = `
+<figure
+  className="story-list__item"
+>
+  <div
+    className="item__holder"
+  />
+  <div
+    className="item__date"
+  >
+    <span
+      className="date__span date__day"
+    >
+      08
+    </span>
+    <span
+      className="date__span date__month"
+    >
+      NOV
+    </span>
+    <span
+      className="date__span date__year"
+    >
+      2018
+    </span>
+  </div>
+  <figcaption
+    className="item__caption"
+  >
+    <h3
+      className="caption__text caption__title"
+    >
+      title
+    </h3>
+    <p
+      className="caption__text caption__content"
+    >
+      content
+    </p>
+  </figcaption>
+  <div
+    className="item__overlay"
+  >
+    Read Story
+  </div>
+  <Link
+    className="link item__link"
+    replace={false}
+    to="/link"
+  />
+</figure>
+`;
