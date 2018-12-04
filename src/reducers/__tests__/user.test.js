@@ -48,3 +48,27 @@ it("should log user out by updating state", () => {
     isAuthenticated: false
   });
 });
+
+it("should update the store with logged user", () => {
+  const action = {
+    type: "LOGGED_USER",
+    payload: { token: "token" }
+  };
+  expect(user(initialState, action)).toEqual({
+    ...initialState,
+    loading: false,
+    token: action.payload.token,
+    isAuthenticated: true
+  });
+});
+
+it("should update the store when logging user", () => {
+  const action = {
+    type: "LOGGING_USER",
+    payload: true
+  };
+  expect(user(initialState, action)).toEqual({
+    ...initialState,
+    loading: true
+  });
+});

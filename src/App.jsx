@@ -5,6 +5,7 @@ import HomeView from "./views/home/HomeView.jsx";
 import Header from "./views/header/Header.jsx";
 import Footer from "./views/footer/Footer.jsx";
 import Signup from "./views/signup/Signup.jsx";
+import Login from "./views/login/Login.jsx";
 import Toaster from "./views/toaster/Toaster.jsx";
 import "./css/style.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -16,6 +17,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={HomeView} />
       <Route exact path="/signup" component={Signup} />
+      <Route exact path="/login" component={Login} />
     </Switch>
     <Footer />
   </div>

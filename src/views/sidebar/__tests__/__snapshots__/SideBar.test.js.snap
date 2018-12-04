@@ -74,6 +74,18 @@ exports[`should render without crashing when user is not authenticated 1`] = `
         Signup
       </Link>
     </li>
+    <li
+      className="list__item"
+      key="1"
+    >
+      <Link
+        className="link nav__link"
+        replace={false}
+        to="/login"
+      >
+        Login
+      </Link>
+    </li>
   </ul>
 </nav>
 `;
