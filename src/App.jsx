@@ -8,10 +8,11 @@ import Signup from "./views/signup/Signup.jsx";
 import Login from "./views/login/Login.jsx";
 import Stories from "./views/stories/Stories.jsx";
 import Toaster from "./views/toaster/Toaster.jsx";
+import NewStory from "./views/newStory/NewStory.jsx";
+import Story from "./views/story/Story.jsx";
 import ProtectedRoute from "./containers/protectedRoute/ProtectedRoute.jsx";
 import "./css/style.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import NewStory from "./views/newStory/NewStory.jsx";
 
 const App = () => (
   <div className="page page--is-flex page--stretches">
@@ -23,6 +24,7 @@ const App = () => (
       <Route exact path="/login" component={Login} />
       <ProtectedRoute path="/stories" component={Stories} />
       <ProtectedRoute path="/new-story" component={NewStory} />
+      <ProtectedRoute path="/story/:id" component={Story} />
     </Switch>
     <Footer />
   </div>

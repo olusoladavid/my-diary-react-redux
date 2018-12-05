@@ -18,7 +18,7 @@ const StoryCard = ({ story: { id, title, content, created_on }, link }) => {
         <p className="caption__text caption__content">{content.substring(0, 100)}</p>
       </figcaption>
       <div className="item__overlay">Read Story</div>
-      <Link className="link item__link" to={link || `story.html?id=${id}`} />
+      <Link className="link item__link" to={link || `/story/${id}`} />
     </figure>
   );
 };

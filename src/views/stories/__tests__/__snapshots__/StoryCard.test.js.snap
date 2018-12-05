@@ -48,7 +48,7 @@ exports[`renders story content without crashing 1`] = `
   <Link
     className="link item__link"
     replace={false}
-    to="story.html?id=1"
+    to="/story/1"
   />
 </figure>
 `;
