@@ -32,6 +32,18 @@ class API {
   createStory(story) {
     return this.axios.post("/entries", story);
   }
+
+  fetchStory(id) {
+    return this.axios.get(`/entries/${id}`);
+  }
+
+  editStory(id, edit) {
+    return this.axios.put(`/entries/${id}`, edit);
+  }
+
+  deleteStory(id) {
+    return this.axios.delete(`/entries/${id}`);
+  }
 }
 
 const apiInstance = new API();
