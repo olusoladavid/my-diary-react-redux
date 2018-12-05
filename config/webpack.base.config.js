@@ -33,7 +33,15 @@ module.exports = env => {
               "sass-loader"
             ]
           },
-          { test: /\.svg$/, loader: "svg-inline-loader" }
+          {
+            test: /\.(png|jpg|gif|svg)$/,
+            use: [
+              {
+                loader: "file-loader",
+                options: {}
+              }
+            ]
+          }
         ]
       },
       plugins: [
