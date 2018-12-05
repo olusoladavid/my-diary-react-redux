@@ -11,15 +11,15 @@ exports[`renders without crashing 1`] = `
       <h2
         className="form-group__heading"
       >
-        Create an account
+        Unlock your diary
       </h2>
       <form
         action="#"
-        className="form-group__form js-form-signup"
+        className="form-group__form js-form-login"
         onSubmit={[Function]}
       >
         <input
-          className="form__input js-signup-email"
+          className="form__input js-login-email"
           name="email"
           onChange={[Function]}
           onFocus={[Function]}
@@ -29,8 +29,7 @@ exports[`renders without crashing 1`] = `
           value=""
         />
         <input
-          className="form__input js-signup-password"
-          minLength={5}
+          className="form__input js-login-password"
           name="password"
           onChange={[Function]}
           onFocus={[Function]}
@@ -39,29 +38,18 @@ exports[`renders without crashing 1`] = `
           type="password"
           value=""
         />
-        <input
-          className="form__input js-signup-repassword"
-          minLength={5}
-          name="repassword"
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="confirm password"
-          required={true}
-          type="password"
-          value=""
-        />
         <button
           className="form__btn--submit js-login-button"
           type="submit"
         >
-          Signup
+          Login
         </button>
         <Link
           className="form__btn--alternate"
           replace={false}
-          to="/login"
+          to="/signup"
         >
-          Login?
+          Signup?
         </Link>
         <p
           className="form__error js-error-field"
@@ -90,15 +78,15 @@ exports[`renders without crashing when user is signing up 1`] = `
       <h2
         className="form-group__heading"
       >
-        Create an account
+        Unlock your diary
       </h2>
       <form
         action="#"
-        className="form-group__form js-form-signup"
+        className="form-group__form js-form-login"
         onSubmit={[Function]}
       >
         <input
-          className="form__input js-signup-email"
+          className="form__input js-login-email"
           name="email"
           onChange={[Function]}
           onFocus={[Function]}
@@ -108,23 +96,11 @@ exports[`renders without crashing when user is signing up 1`] = `
           value=""
         />
         <input
-          className="form__input js-signup-password"
-          minLength={5}
+          className="form__input js-login-password"
           name="password"
           onChange={[Function]}
           onFocus={[Function]}
           placeholder="password"
-          required={true}
-          type="password"
-          value=""
-        />
-        <input
-          className="form__input js-signup-repassword"
-          minLength={5}
-          name="repassword"
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="confirm password"
           required={true}
           type="password"
           value=""
@@ -140,9 +116,9 @@ exports[`renders without crashing when user is signing up 1`] = `
         <Link
           className="form__btn--alternate"
           replace={false}
-          to="/login"
+          to="/signup"
         >
-          Login?
+          Signup?
         </Link>
         <p
           className="form__error js-error-field"

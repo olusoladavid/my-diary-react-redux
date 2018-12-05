@@ -1,4 +1,4 @@
-import { CREATED_USER, CREATING_USER, LOGOUT } from "../actions/user";
+import { CREATED_USER, CREATING_USER, LOGOUT, LOGGED_USER, LOGGING_USER } from "../actions/user";
 
 const initialState = {
   loading: false,
@@ -17,6 +17,12 @@ export default (state = initialState, { type, payload }) => {
     case LOGOUT:
       localStorage.removeItem("accessToken");
       return { ...state, token: null, isAuthenticated: false };
+
+    case LOGGED_USER:
+      return { ...state, loading: false, token: payload.token, isAuthenticated: true };
+
+    case LOGGING_USER:
+      return { ...state, loading: payload };
 
     default:
       return state;

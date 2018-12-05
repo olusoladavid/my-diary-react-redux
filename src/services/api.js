@@ -20,6 +20,10 @@ class API {
   createUser(user) {
     return this.axios.post("/auth/signup", user);
   }
+
+  loginUser(user) {
+    return this.axios.post("/auth/login", user);
+  }
 }
 
 const apiInstance = new API();

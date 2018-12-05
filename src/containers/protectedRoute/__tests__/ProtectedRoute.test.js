@@ -3,7 +3,6 @@ import configureStore from "redux-mock-store";
 import { Route } from "react-router-dom";
 
 import ConnectedProtectedRoute, { ProtectedRoute } from "../ProtectedRoute";
-import Footer from "../../../views/footer/Footer";
 
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
@@ -36,6 +35,6 @@ it("renders non authenticated route with render prop without crashing", () => {
 
 it("should synchronise with app state in the store", () => {
   const store = mockStore(storeState);
-  const wrapper = shallow(<ConnectedProtectedRoute component={Footer} isAuthenticated={true} store={store} />);
+  const wrapper = shallow(<ConnectedProtectedRoute component={MyComponent} isAuthenticated={true} store={store} />);
   expect(wrapper.prop("isAuthenticated")).toBe(false);
 });

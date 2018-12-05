@@ -1,15 +1,14 @@
-/* eslint-disable no-console */
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { hideToast, showToast } from "../../actions/toaster";
-import { createUser } from "../../actions/user";
+import { loginUser } from "../../actions/user";
 
 const propTypes = {
   hideToast: PropTypes.func,
-  createUser: PropTypes.func,
+  loginUser: PropTypes.func,
   showToast: PropTypes.func,
   loading: PropTypes.bool,
   isAuthenticated: PropTypes.bool
@@ -17,11 +16,10 @@ const propTypes = {
 
 const defaultProps = {};
 
-export class Signup extends React.Component {
+export class Login extends React.Component {
   state = {
     email: "",
-    password: "",
-    repassword: ""
+    password: ""
   };
 
   clearErrors = () => {
@@ -35,17 +33,13 @@ export class Signup extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const { createUser, showToast } = this.props;
-    const { email, password, repassword } = this.state;
-    if (password !== repassword) {
-      showToast([{ type: "error", message: "Password does not match" }]);
-      return;
-    }
-    createUser({ email, password });
+    const { loginUser } = this.props;
+    const { email, password } = this.state;
+    loginUser({ email, password });
   };
 
   render() {
-    const { email, password, repassword } = this.state;
+    const { email, password } = this.state;
     const { loading, isAuthenticated } = this.props;
     if (isAuthenticated) {
       return <Redirect to="/stories" />;
@@ -54,45 +48,33 @@ export class Signup extends React.Component {
       <React.Fragment>
         <div className="container">
           <div className="form-group">
-            <h2 className="form-group__heading">Create an account</h2>
-            <form className="form-group__form js-form-signup" onSubmit={this.handleSubmit} action="#">
+            <h2 className="form-group__heading">Unlock your diary</h2>
+            <form className="form-group__form js-form-login" onSubmit={this.handleSubmit} action="#">
               <input
-                className="form__input js-signup-email"
+                className="form__input js-login-email"
                 type="email"
-                value={email}
                 placeholder="email"
-                name="email"
                 required
+                value={email}
+                name="email"
                 onFocus={this.clearErrors}
                 onChange={this.handleInputChange}
               />
               <input
-                className="form__input js-signup-password"
+                className="form__input js-login-password"
                 type="password"
                 placeholder="password"
-                name="password"
+                required
                 value={password}
-                minLength={5}
-                required
-                onFocus={this.clearErrors}
-                onChange={this.handleInputChange}
-              />
-              <input
-                className="form__input js-signup-repassword"
-                type="password"
-                name="repassword"
-                value={repassword}
-                placeholder="confirm password"
-                minLength={5}
-                required
+                name="password"
                 onFocus={this.clearErrors}
                 onChange={this.handleInputChange}
               />
               <button type="submit" className="form__btn--submit js-login-button">
-                {loading ? <i className="fas fa-circle-notch fa-spin" /> : "Signup"}
+                {loading ? <i className="fas fa-circle-notch fa-spin" /> : "Login"}
               </button>
-              <Link className="form__btn--alternate" to="/login">
-                Login?
+              <Link className="form__btn--alternate" to="/signup">
+                Signup?
               </Link>
               <p className="form__error js-error-field" />
             </form>
@@ -103,8 +85,8 @@ export class Signup extends React.Component {
   }
 }
 
-Signup.propTypes = propTypes;
-Signup.defaultProps = defaultProps;
+Login.propTypes = propTypes;
+Login.defaultProps = defaultProps;
 
 const mapStateToProps = state => ({
   loading: state.user.loading,
@@ -114,10 +96,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   hideToast,
   showToast,
-  createUser
+  loginUser
 };
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Signup);
+)(Login);

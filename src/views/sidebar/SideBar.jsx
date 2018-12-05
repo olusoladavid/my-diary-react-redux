@@ -15,7 +15,8 @@ const defaultProps = {};
 
 const sideBarItems = [
   { location: "/", public: true, name: "Home" },
-  { location: "/signup", public: true, name: "Signup" }
+  { location: "/signup", public: true, name: "Signup" },
+  { location: "/login", public: true, name: "Login" }
 ];
 
 export class SideBar extends React.Component {
