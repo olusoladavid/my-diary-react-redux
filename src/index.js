@@ -9,7 +9,12 @@ import thunk from "redux-thunk";
 import App from "./App.jsx";
 import rootReducer from "./reducers";
 
-const store = createStore(rootReducer, {}, composeWithDevTools(applyMiddleware(thunk)));
+const accessToken = localStorage.getItem("accessToken");
+const store = createStore(
+  rootReducer,
+  { user: { isAuthenticated: Boolean(accessToken), token: accessToken } },
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
 ReactDOM.render(
   <Provider store={store}>

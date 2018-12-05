@@ -1,17 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Header from "../header/Header.jsx";
-import Footer from "../footer/Footer.jsx";
-
 import reminder from "../../img/remind-icon.svg";
 import privacy from "../../img/lock-icon.svg";
 import favorites from "../../img/heart-solid.svg";
 
 const HomeView = () => {
   return (
-    <div className="page page--is-flex page--stretches">
-      <Header />
+    <React.Fragment>
       <section className="hero hero--home">
         <div className="container">
           <h1 className="hero__title">Capture every moment.</h1>
@@ -45,8 +41,7 @@ const HomeView = () => {
           </div>
         </div>
       </section>
-      <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 
