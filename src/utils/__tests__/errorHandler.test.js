@@ -1,6 +1,6 @@
 import errorHandler from "../errorHandler";
 
-const error1 = { response: { status: 400, error: [{ message: "message" }] } };
+const error1 = { response: { status: 400, data: { error: [{ message: "message" }] } } };
 const error2 = { response: { status: 401, error: [{ message: "message" }] } };
 const error3 = { response: { status: 500, data: { error: { message: "internal error" } } } };
 const error4 = { request: {} };

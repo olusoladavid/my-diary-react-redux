@@ -15,17 +15,16 @@ export class Toaster extends Component {
             &times;
           </div>
           {toasts.map((toast, index) => (
-            <div key={index} className="toast js-toast">
-              <span
-                className={classNames(
-                  "toast__text",
-                  "js-toast-text",
-                  { "toast--progress": toast.type === "progress" },
-                  { "toast--error": toast.type === "error" }
-                )}
-              >
-                {toast.message}
-              </span>
+            <div
+              key={index}
+              className={classNames(
+                "toast",
+                "js-toast",
+                { "toast--progress": toast.type === "progress" },
+                { "toast--error": toast.type === "error" }
+              )}
+            >
+              <span className="toast__text js-toast-text">{toast.message}</span>
             </div>
           ))}
         </div>

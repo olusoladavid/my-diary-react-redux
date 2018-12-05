@@ -4,7 +4,7 @@ import { logOut } from "../actions/user";
 const errorHandler = error => {
   const { response } = error;
   if (response && response.status === 400) {
-    const errorList = response.error;
+    const errorList = response.data.error;
     const payload = errorList.map(errObj => ({ type: "error", message: errObj.message }));
     return showToast(payload);
   } else if (response && response.status === 401) {

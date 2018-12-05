@@ -30,6 +30,7 @@ export class SideBar extends React.Component {
   }
 
   componentDidMount() {
+    if (document.documentElement.clientWidth < 768) this.setState({ open: false });
     window.addEventListener("resize", this.toggleSideBar);
   }
 
@@ -68,7 +69,7 @@ export class SideBar extends React.Component {
             <span onClick={this.hideSideBar} className="nav__close-menu js-close-menu" />
           </li>
           {itemsToRender.map((item, index) => (
-            <li key={index} className="list__item">
+            <li key={index} className="list__item" onClick={this.hideSideBar}>
               <Link to={item.location} className="link nav__link">
                 {item.name}
               </Link>

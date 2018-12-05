@@ -11,6 +11,7 @@ import Toaster from "./views/toaster/Toaster.jsx";
 import ProtectedRoute from "./containers/protectedRoute/ProtectedRoute.jsx";
 import "./css/style.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import NewStory from "./views/newStory/NewStory.jsx";
 
 const App = () => (
   <div className="page page--is-flex page--stretches">
@@ -21,6 +22,7 @@ const App = () => (
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/login" component={Login} />
       <ProtectedRoute path="/stories" component={Stories} />
+      <ProtectedRoute path="/new-story" component={NewStory} />
     </Switch>
     <Footer />
   </div>
