@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Fragment>
+  <div>
+    <h1
+      className="story-list__title js-story-list-title"
+    >
+      My Stories
+    </h1>
+    <div
+      className="story-list js-story-list"
+    >
+      <StoryCard
+        link="/new-story"
+        story={
+          Object {
+            "content": "Click on this card to add your first story",
+            "created_on": null,
+            "id": null,
+            "title": "You have not added any story",
+          }
+        }
+      />
+    </div>
+    <div
+      className="story-list__load-btn"
+    >
+      <span
+        className="button button--success pagination-btn js-stories-prev"
+        data-viewable="true"
+        href="#"
+      >
+        <i
+          className="fas fa-arrow-left"
+        />
+         Prev
+         
+      </span>
+      <span
+        className="button button--success pagination-btn js-stories-more"
+        data-viewable="true"
+        href="#"
+      >
+        More 
+        <i
+          className="fas fa-arrow-right"
+        />
+      </span>
+    </div>
+  </div>
+</Fragment>
+`;
+
+exports[`renders without crashing 2`] = `
+<Fragment>
+  <div>
+    <h1
+      className="story-list__title js-story-list-title"
+    >
+      My Stories
+    </h1>
+    <div
+      className="story-list js-story-list"
+    >
+      <StoryCard
+        story={Object {}}
+      />
+    </div>
+    <div
+      className="story-list__load-btn"
+    >
+      <span
+        className="button button--success pagination-btn js-stories-prev"
+        data-viewable="true"
+        href="#"
+      >
+        <i
+          className="fas fa-arrow-left"
+        />
+         Prev
+         
+      </span>
+      <span
+        className="button button--success pagination-btn js-stories-more"
+        data-viewable="true"
+        href="#"
+      >
+        More 
+        <i
+          className="fas fa-arrow-right"
+        />
+      </span>
+    </div>
+  </div>
+</Fragment>
+`;

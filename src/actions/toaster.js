@@ -9,3 +9,7 @@ export const showToast = payload => ({
 export const hideToast = () => ({
   type: HIDE_TOAST
 });
+
+export const showProgress = () => {
+  return showToast([{ type: "progress", message: "Loading..." }]);
+};
