@@ -13,11 +13,11 @@ exports[`renders without crashing when visible 1`] = `
     ×
   </div>
   <div
-    className="toast js-toast"
+    className="toast js-toast toast--error"
     key="0"
   >
     <span
-      className="toast__text js-toast-text toast--error"
+      className="toast__text js-toast-text"
     >
       error
     </span>

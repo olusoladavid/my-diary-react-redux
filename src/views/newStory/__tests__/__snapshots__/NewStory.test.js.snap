@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <div
+      className="form-group js-new-story"
+    >
+      <h2
+        className="form-group__heading"
+      >
+        05 DECEMBER 2018
+      </h2>
+      <form
+        action="#"
+        className="form-group__form"
+        onSubmit={[Function]}
+      >
+        <input
+          className="form__input js-new-story-title"
+          name="title"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Title"
+          required={true}
+          type="text"
+          value=""
+        />
+        <textarea
+          className="form__input js-new-story-content"
+          cols={10}
+          name="content"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Content"
+          required={true}
+          rows={12}
+          value=""
+        />
+        <button
+          className="form__btn--submit js-new-story-btn"
+          type="submit"
+        >
+          Save
+        </button>
+        <p
+          className="form__error js-error-field"
+        />
+      </form>
+    </div>
+  </div>
+</Fragment>
+`;
+
+exports[`renders without crashing when story is being created 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <div
+      className="form-group js-new-story"
+    >
+      <h2
+        className="form-group__heading"
+      >
+        05 DECEMBER 2018
+      </h2>
+      <form
+        action="#"
+        className="form-group__form"
+        onSubmit={[Function]}
+      >
+        <input
+          className="form__input js-new-story-title"
+          name="title"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Title"
+          required={true}
+          type="text"
+          value=""
+        />
+        <textarea
+          className="form__input js-new-story-content"
+          cols={10}
+          name="content"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Content"
+          required={true}
+          rows={12}
+          value=""
+        />
+        <button
+          className="form__btn--submit js-new-story-btn"
+          type="submit"
+        >
+          <i
+            className="fas fa-circle-notch fa-spin"
+          />
+        </button>
+        <p
+          className="form__error js-error-field"
+        />
+      </form>
+    </div>
+  </div>
+</Fragment>
+`;
+
+exports[`renders without crashing when story is created 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <div
+      className="form-group js-new-story"
+    >
+      <h2
+        className="form-group__heading"
+      >
+        05 DECEMBER 2018
+      </h2>
+      <form
+        action="#"
+        className="form-group__form"
+        onSubmit={[Function]}
+      >
+        <input
+          className="form__input js-new-story-title"
+          name="title"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Title"
+          required={true}
+          type="text"
+          value=""
+        />
+        <textarea
+          className="form__input js-new-story-content"
+          cols={10}
+          name="content"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Content"
+          required={true}
+          rows={12}
+          value=""
+        />
+        <button
+          className="form__btn--submit js-new-story-btn"
+          type="submit"
+        >
+          Save
+        </button>
+        <p
+          className="form__error js-error-field"
+        />
+      </form>
+    </div>
+  </div>
+</Fragment>
+`;

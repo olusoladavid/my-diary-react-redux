@@ -28,6 +28,10 @@ class API {
   fetchStories(page = 0, size = 20) {
     return this.axios.get(`/entries?page=${page}&size=${size}`);
   }
+
+  createStory(story) {
+    return this.axios.post("/entries", story);
+  }
 }
 
 const apiInstance = new API();
